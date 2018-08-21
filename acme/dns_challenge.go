@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/miekg/dns"
-	"github.com/xenolf/lego/log"
+	"github.com/icasei/lego/log"
 )
 
 type preCheckDNSFunc func(fqdn, value string) (bool, error)

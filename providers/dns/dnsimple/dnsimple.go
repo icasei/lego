@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/dnsimple/dnsimple-go/dnsimple"
-	"github.com/xenolf/lego/acme"
+	"github.com/icasei/lego/acme"
 )
 
 // DNSProvider is an implementation of the acme.ChallengeProvider interface.

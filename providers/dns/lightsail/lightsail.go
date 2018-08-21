@@ -12,7 +12,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/request"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/lightsail"
-	"github.com/xenolf/lego/acme"
+	"github.com/icasei/lego/acme"
 )
 
 const (

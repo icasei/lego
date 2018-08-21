@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/xenolf/lego/acme"
-	"github.com/xenolf/lego/platform/config/env"
+	"github.com/icasei/lego/acme"
+	"github.com/icasei/lego/platform/config/env"
 )
 
 // DNSProvider implements the acme.ChallengeProvider interface

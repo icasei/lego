@@ -7,9 +7,9 @@ import (
 	"os/exec"
 	"strconv"
 
-	"github.com/xenolf/lego/acme"
-	"github.com/xenolf/lego/log"
-	"github.com/xenolf/lego/platform/config/env"
+	"github.com/icasei/lego/acme"
+	"github.com/icasei/lego/log"
+	"github.com/icasei/lego/platform/config/env"
 )
 
 // Config Provider configuration.

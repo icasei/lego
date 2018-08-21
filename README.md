@@ -2,7 +2,7 @@
 
 Let's Encrypt client and ACME library written in Go
 
-[![GoDoc](https://godoc.org/github.com/xenolf/lego/acme?status.svg)](https://godoc.org/github.com/xenolf/lego/acme)
+[![GoDoc](https://godoc.org/github.com/icasei/lego/acme?status.svg)](https://godoc.org/github.com/icasei/lego/acme)
 [![Build Status](https://travis-ci.org/xenolf/lego.svg?branch=master)](https://travis-ci.org/xenolf/lego)
 [![Dev Chat](https://img.shields.io/badge/dev%20chat-gitter-blue.svg?label=dev+chat)](https://gitter.im/xenolf/lego)
 [![Beerpay](https://beerpay.io/xenolf/lego/badge.svg)](https://beerpay.io/xenolf/lego)
@@ -11,13 +11,13 @@ Let's Encrypt client and ACME library written in Go
 
 lego supports both binary installs and install from source.
 
-To get the binary just download the latest release for your OS/Arch from [the release page](https://github.com/xenolf/lego/releases)
+To get the binary just download the latest release for your OS/Arch from [the release page](https://github.com/icasei/lego/releases)
 and put the binary somewhere convenient. lego does not assume anything about the location you run it from.
 
 To install from source, just run:
 
 ```bash
-go get -u github.com/xenolf/lego
+go get -u github.com/icasei/lego
 ```
 
 To build lego inside a Docker container, just run
@@ -58,8 +58,8 @@ Otherwise the release will be tagged with the `dev` version identifier.
   - DNS (dns-01)
   - TLS (tls-alpn-01)
 - SAN certificate support
-- Comes with multiple optional [DNS providers](https://github.com/xenolf/lego/tree/master/providers/dns)
-- [Custom challenge solvers](https://github.com/xenolf/lego/wiki/Writing-a-Challenge-Solver)
+- Comes with multiple optional [DNS providers](https://github.com/icasei/lego/tree/master/providers/dns)
+- [Custom challenge solvers](https://github.com/icasei/lego/wiki/Writing-a-Challenge-Solver)
 - Certificate bundling
 - OCSP helper function
 
@@ -138,7 +138,7 @@ This traffic redirection is only needed as long as lego solves challenges. As so
 
 ### CLI Example
 
-Assumes the `lego` binary has permission to bind to ports 80 and 443. You can get a pre-built binary from the [releases](https://github.com/xenolf/lego/releases) page.
+Assumes the `lego` binary has permission to bind to ports 80 and 443. You can get a pre-built binary from the [releases](https://github.com/icasei/lego/releases) page.
 If your environment does not allow you to bind to these ports, please read [Port Usage](#port-usage).
 
 Obtain a certificate:
@@ -296,4 +296,4 @@ fmt.Printf("%#v\n", certificates)
 
 ## ACME v1
 
-lego introduced support for ACME v2 in [v1.0.0](https://github.com/xenolf/lego/releases/tag/v1.0.0), if you still need to utilize ACME v1, you can do so by using the [v0.5.0](https://github.com/xenolf/lego/releases/tag/v0.5.0) version.
+lego introduced support for ACME v2 in [v1.0.0](https://github.com/icasei/lego/releases/tag/v1.0.0), if you still need to utilize ACME v1, you can do so by using the [v0.5.0](https://github.com/icasei/lego/releases/tag/v0.5.0) version.

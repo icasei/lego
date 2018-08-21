@@ -12,8 +12,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/xenolf/lego/acme"
-	"github.com/xenolf/lego/platform/config/env"
+	"github.com/icasei/lego/acme"
+	"github.com/icasei/lego/platform/config/env"
 )
 
 // CloudFlareAPIURL represents the API endpoint to call.

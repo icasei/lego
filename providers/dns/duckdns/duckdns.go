@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/xenolf/lego/acme"
-	"github.com/xenolf/lego/platform/config/env"
+	"github.com/icasei/lego/acme"
+	"github.com/icasei/lego/platform/config/env"
 )
 
 // DNSProvider adds and removes the record for the DNS challenge

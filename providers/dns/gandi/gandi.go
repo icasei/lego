@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xenolf/lego/acme"
-	"github.com/xenolf/lego/platform/config/env"
+	"github.com/icasei/lego/acme"
+	"github.com/icasei/lego/platform/config/env"
 )
 
 // Gandi API reference:       http://doc.rpc.gandi.net/index.html

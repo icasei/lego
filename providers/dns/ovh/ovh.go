@@ -8,8 +8,8 @@ import (
 	"sync"
 
 	"github.com/ovh/go-ovh/ovh"
-	"github.com/xenolf/lego/acme"
-	"github.com/xenolf/lego/platform/config/env"
+	"github.com/icasei/lego/acme"
+	"github.com/icasei/lego/platform/config/env"
 )
 
 // OVH API reference:       https://eu.api.ovh.com/

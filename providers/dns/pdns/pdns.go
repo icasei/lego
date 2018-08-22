@@ -275,12 +275,12 @@ func (d *DNSProvider) makeRequest(method, uri string, body io.Reader) (json.RawM
 
 	url := d.host.Scheme + "://" + d.host.Host + path + uri
 
-	fmt.Println("DUMP STARTS HERE")
-	fmt.Printf("url -> %s\n", url)
-	fmt.Printf("d.host.Scheme -> %s\n", d.host.Scheme)
-	fmt.Printf("d.host.Host -> %s\n", d.host.Host)
-	fmt.Printf("path -> %s\n", path)
-	fmt.Printf("uri -> %s\n", uri)
+	//fmt.Println("DUMP STARTS HERE")
+	//fmt.Printf("url -> %s\n", url)
+	//fmt.Printf("d.host.Scheme -> %s\n", d.host.Scheme)
+	//fmt.Printf("d.host.Host -> %s\n", d.host.Host)
+	//fmt.Printf("path -> %s\n", path)
+	//fmt.Printf("uri -> %s\n", uri)
 
 	req, err := http.NewRequest(method, url, body)
 	if err != nil {

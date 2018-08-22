@@ -161,26 +161,28 @@ func (d *DNSProvider) getHostedZone(fqdn string) (*hostedZone, error) {
 		return nil, err
 	}
 
-	url := "/servers/localhost/zones"
+	//url := "/servers/localhost/zones"
+	//result, err := d.makeRequest(http.MethodGet, url, nil)
+	//if err != nil {
+	//	return nil, err
+	//}
+	//
+	//var zones []hostedZone
+	//err = json.Unmarshal(result, &zones)
+	//if err != nil {
+	//	return nil, err
+	//}
+	//
+	//url = ""
+	//for _, zone := range zones {
+	//	if acme.UnFqdn(zone.Name) == acme.UnFqdn(authZone) {
+	//		url = zone.URL
+	//	}
+	//}
+
+	url := "api/v1/servers/localhost/zones/" + acme.UnFqdn(authZone)
+
 	result, err := d.makeRequest(http.MethodGet, url, nil)
-	if err != nil {
-		return nil, err
-	}
-
-	var zones []hostedZone
-	err = json.Unmarshal(result, &zones)
-	if err != nil {
-		return nil, err
-	}
-
-	url = ""
-	for _, zone := range zones {
-		if acme.UnFqdn(zone.Name) == acme.UnFqdn(authZone) {
-			url = zone.URL
-		}
-	}
-
-	result, err = d.makeRequest(http.MethodGet, url, nil)
 	if err != nil {
 		return nil, err
 	}
